@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--CSS Styles -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+
+    <!-- Animate CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>BURGER SPOT | Fast Food</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <h1>BURGER SPOT</h1>
+      <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#menu" class="nav-link">Menu</a></li>
+        <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+      </button>
+    </nav>
+
+    <!-- header with image slide show -->
+
+    <div class="header">
+      <div class="slider">
+        <div class="slides">
+          <div
+            class="slide"
+            style="background-image: url('Images/burgerheader.webp')"
+          ></div>
+          <div
+            class="slide"
+            style="background-image: url('Images/headerimg6.jpeg')"
+          ></div>
+          <div
+            class="slide"
+            style="background-image: url('Images/headerimg5.jpg')"
+          ></div>
+          <!-- Add more slides later -->
+        </div>
+        <div class="content">
+          <h2>Burger Spot.</h2>
+          <p3>Burgers That Make You Melt!</p>
+            <a href="#menu">
+          <button class="button"><span>Go To Menu</span></button>
+        </a>
+      </div>
+        <div class="dots">
+          <!-- Dots will be added with JavaScript -->
+        </div>
+      </div>
+    </div>
+
+    <!-- More about -->
+    <section id="about" class="about-us">
+      <div class="about-us-container">
+        <img
+          src="Images/place.jpg"
+          alt="Fast Food Place"
+          class="about-us-image"
+        />
+        <div class="about-us-text">
+          <h2>About Us</h2>
+          <p>
+            Welcome to Burger Spot, where we serve delicious and
+            fresh fast food that you will keep coming back for more. Our mission is simple,
+            to provide high-quality meals with fast and friendly service.
+          </p>
+          <p>
+            From our signature burgers and crispy fries to our refreshing
+            beverages and delightful desserts, we have something for everyone.
+            Whether you're grabbing a quick bite or dining in with friends and
+            family, burger Spot is the place to be.
+          </p>
+          <p>
+            We value our customers and strive to create a welcoming atmosphere.
+            Come visit us today and experience the best in fast food dining!
+          </p>
+          <br />
+          <h3>Meet the Team</h3>
+        </div>
+
+        <div class="team-member">
+          <img src="Images/headchef2.jpg" alt="Head Cook" />
+          <h4>Jane Doe - Head Cook</h4>
+          <p>
+            Jane has over 20 years of experience in the culinary world, bringing
+            her passion for innovative flavors and traditional recipes to our
+            kitchen.
+          </p>
+        </div>
+
+        <div class="team-member">
+          <img src="Images/manager2.jpg" alt="Manager" />
+          <h4>John Smith - Manager</h4>
+          <p>
+            John ensures everything runs smoothly at our restaurant. With his
+            extensive background in hospitality, he makes sure every guest has a
+            fantastic experience.
+          </p>
+        </div>
+
+        <div class="team-member">
+          <img src="Images/assistant.jpg" alt="Assistant Chef" />
+          <h4>Emily Brown - Assistant Chef</h4>
+          <p>
+            Emily's creativity and attention to detail shine through in every
+            dish she helps prepare. Her dedication to culinary excellence is
+            evident in her work.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu section -->
+    <section id="menu" class="Menu">
+      <div class="menu-container">
+        <div class="menu-buttons">
+          <button onclick="showSection('starters')">Sides</button>
+          <button onclick="showSection('breakfast')">Beverages</button>
+          <button onclick="showSection('mainDishes')">Main Dishes</button>
+          <button onclick="showSection('desserts')">Desserts</button>
+        </div>
+        <div class="menu-items" id="starters">
+          <div class="menu-item">
+            <img src="Images/fries.jpg" alt="Fries" />
+            <div class="menu-item-text">
+              <h3>Fries</h3>
+              <p>R15,99</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="Images/steakbites.jpg" alt="Steak bites" />
+            <div class="menu-item-text">
+              <h3>Steak Bites</h3>
+              <p>R29,99</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="Images/onionrings.jpg" alt="Onion rings" />
+            <div class="menu-item-text">
+              <h3>Onion rings</h3>
+              <p>R17,99</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="Images/wings.jpg" alt="Wings" />
+            <div class="menu-item-text">
+              <h3>Wings</h3>
+              <p>R29,99</p>
+            </div>
+          </div>
+        </div>
+        <div class="menu-items" id="breakfast" style="display: none">
+          <div class="menu-item">
+            <img src="Images/ice tea.jpg" alt="Ice Tea" />
+            <div class="menu-item-text">
+              <h3>Iced Tea</h3>
+              <p>R9,99</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="Images/softdrinks.jpg" alt="Soft Drinks" />
+            <div class="menu-item-text">
+              <h3>Soft Drinks</h3>
+              <p>R10,99</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="Images/milkshake.jpg" alt="milkshake" />
+            <div class="menu-item-text">
+              <h3>Milkshakes</h3>
+              <p>R39,99</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="Images/water.png" alt="Water" />
+            <div class="menu-item-text">
+              <h3>Water</h3>
+              <p>R9,99</p>
+            </div>
+          </div>
+        </div>
+        <div class="menu-items" id="mainDishes" style="display: none">
+          <div class="menu-item">
+            <img src="Images/cheeseburger.jpg" alt="cheeseburger" />
+            <div class="menu-item-text">
+              <h3>Cheeseburger</h3>
+              <p>R49,99</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="Images/beefburger.jpg" alt="Beef Burger" />
+            <div class="menu-item-text">
+              <h3>Beef Burger</h3>
+              <p>R49,99</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="Images/tikkachicken.jpg" alt="Tikka Chicken" />
+            <div class="menu-item-text">
+              <h3>Tikka Chicken</h3>
+              <p>R39,99</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="Images/wrap.webp" alt="wrap" />
+            <div class="menu-item-text">
+              <h3>Chicken Wrap</h3>
+              <p>R39,99</p>
+            </div>
+          </div>
+        </div>
+        <div class="menu-items" id="desserts" style="display: none">
+          <div class="menu-item">
+            <img src="Images/brownies.jpg" alt="brownies" />
+            <div class="menu-item-text">
+              <h3>Brownie 5pk</h3>
+              <p>R50,99</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="Images/cupcakes.jpg" alt="cupcakes" />
+            <div class="menu-item-text">
+              <h3>Cupcakes 5pk</h3>
+              <p>R45,99</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="Images/sundae.jpg" alt="sundae" />
+            <div class="menu-item-text">
+              <h3>Choclate Sundae</h3>
+              <p>R26,99</p>
+            </div>
+          </div>
+          <div class="menu-item">
+            <img src="Images/icecream.jfif" alt="ice cream" />
+            <div class="menu-item-text">
+              <h3>Ice Cream Cone</h3>
+              <p>R17,99</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- testimonals -->
+    <section id="testimonials">
+      <h2>Hear From Our Customers</h2>
+      <div class="testimonial-content">
+          <blockquote>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui
+            faucibus in ornare quam viverra orci sagittis. Nec tincidunt
+            praesent semper feugiat nibh sed. Sed viverra tellus in hac
+            habitasse platea. Maecenas sed enim ut sem viverra."
+          </p>
+          <footer>Mary Johnson</footer>
+        </blockquote>
+        </div>
+         
+      
+      <button id="prev-btn" class="arrow-btn">&lt;</button>
+      <button id="next-btn" class="arrow-btn">&gt;</button>
+    </section>
+    <!-- Contact section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <div class="contact-container">
+        <div class="contact-info">
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>123 Main Street, Mayville</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <p>(123) 456-7890</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-envelope"></i>
+            <p>info@burgerspot.com</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <p>Mon - Fri: 10am - 10pm</p>
+          </div>
+        </div>
+        <form class="contact-form" action="your-server-endpoint" method="post">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+    <!-- Social accounts - Fixed to the right -->
+    <div class="socials">
+      <a href="#"><ion-icon name="logo-twitter" style="zoom:2.0; color: #4433e0;"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-instagram" style="zoom:2.0;"></ion-icon></a>
+      <a href="#"><ion-icon name="logo-facebook" style="zoom:2.0; color: #2284d4;"></ion-icon></a>
+    </div>
+
+    <!-- Scroll to top -->
+    <i class="scroll-up" id="scroll-up"
+    ><a href="#"><ion-icon name="arrow-up-outline" style="zoom:2.0; color: black;"></ion-icon></a></i>
+
+    <!-- Footer section -->
+    <footer>
+      <div class="footer-content">
+        <div class="contact-infof">
+          <h3>Contact Us</h3>
+          <p>123 Main Street, Mayville</p>
+          <p>Phone: (123) 456-7890</p>
+          <p>Email: info@restaurant.com</p>
+        </div>
+        <div class="opening-hours">
+          <h3>Opening Hours</h3>
+          <p>Mon-Fri: 9am - 10pm</p>
+          <p>Sat-Sun: 10am - 11pm</p>
+        </div>
+        <div class="newsletter">
+          <h3>Newsletter</h3>
+          <form>
+            <input type="email" placeholder="Your email" />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+        <div class="social-media">
+          <h3>Follow Us</h3>
+          <a href="#"><ion-icon name="logo-facebook" style="zoom:2.0;"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-instagram" style="zoom:2.0;"></ion-icon></a>
+          <a href="#"><ion-icon name="logo-twitter" style="zoom:2.0;"></ion-icon></a>
+        </div>
+        <div class="map-directions">
+          <h3>Find Us</h3>
+          <a href="https://www.google.com/maps">View on Google Maps</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 Burger Spot. All rights reserved.</p>
+        <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+      </div>
+    </footer>
+
+    <!-- Website scripts -->
+    <script src="script.js"></script>
+
+    <!-- Ion icons scripts -->
+    <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+  </body>
+</html>
